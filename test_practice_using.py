@@ -27,14 +27,14 @@ class Testpracticee(BaseeClass):
 
         print("Tc-2: Pass")
 
-    # def test_tc3(self):
-    #     print("Tc-3: To verify the item list are present and its count")
-    #     print("Running test case: 3")
-    #     lists = self.driver.find_elements(By.XPATH, "//body//app-root//app-card")
-    #     total = len(lists)
-    #     print("Total list: ", total)
-    #     print("Tc3: Pass")
-    #     self.driver.find_element(By.LINK_TEXT, "Shop").click()
+    def test_tc3(self):
+        print("Tc-3: To verify the item list are present and its count")
+        print("Running test case: 3")
+        lists = self.driver.find_elements(By.XPATH, "//body//app-root//app-card")
+        total = len(lists)
+        print("Total list: ", total)
+        print("Tc3: Pass")
+        self.driver.find_element(By.LINK_TEXT, "Shop").click()
 
     # def test_tc4(self):
     #     print("Tc-4: To verify the check out function without adding any items")
