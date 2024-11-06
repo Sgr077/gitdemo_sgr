@@ -36,14 +36,14 @@ class Testpracticee(BaseeClass):
     #     print("Tc3: Pass")
     #     self.driver.find_element(By.LINK_TEXT, "Shop").click()
 
-    # def test_tc4(self):
-    #     print("Tc-4: To verify the check out function without adding any items")
-    #     print("Running test case: 4")
-    #     self.driver.find_element(By.XPATH, "//a[@class='nav-link btn btn-primary']").click()
-    #     amount = self.driver.find_element(By.XPATH, "//td[@class='text-right']").text
-    #     print("Total: ", amount)
-    #     print("Check out button is clickable and amount is Zero")
-    #     print("Tc-4: Pass")
+    def test_tc4(self):
+        print("Tc-4: To verify the check out function without adding any items")
+        print("Running test case: 4")
+        self.driver.find_element(By.XPATH, "//a[@class='nav-link btn btn-primary']").click()
+        amount = self.driver.find_element(By.XPATH, "//td[@class='text-right']").text
+        print("Total: ", amount)
+        print("Check out button is clickable and amount is Zero")
+        print("Tc-4: Pass")
     #     self.driver.find_element(By.LINK_TEXT, "Shop").click()
     #
     # def test_tc5(self):
