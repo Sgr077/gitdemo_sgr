@@ -61,29 +61,29 @@ class Testpracticee(BaseeClass):
         print("All product added to the cart and total amount is displayed ")
         print("Tc-5: Pass")
         self.driver.find_element(By.LINK_TEXT, "Shop").click()
-    #
-    # def test_tc6(self):
-    #     print("Tc-6: To verify the cart function for one items adding")
-    #     print("Running test case: 6")
-    #     self.driver.find_element(By.XPATH, "(//button[normalize-space()='Add'])[2]").click()
-    #     self.driver.find_element(By.XPATH, "//a[@class='nav-link btn btn-primary']").click()
-    #     amount = self.driver.find_element(By.XPATH, "//td[@class='text-right']").text
-    #     print("Total: ", amount)
-    #     print("one product added to the cart and total amount is displayed ")
-    #     print("Tc-6: Pass")
-    #     self.driver.find_element(By.LINK_TEXT, "Shop").click()
-    #
-    # def test_tc7(self):
-    #     print("Tc-7: To verify the cart function for two items adding")
-    #     print("Running test case: 7")
-    #     self.driver.find_element(By.XPATH, "(//button[normalize-space()='Add'])[1]").click()
-    #     self.driver.find_element(By.XPATH, "(//button[normalize-space()='Add'])[2]").click()
-    #     self.driver.find_element(By.XPATH, "//a[@class='nav-link btn btn-primary']").click()
-    #     amount = self.driver.find_element(By.XPATH, "//td[@class='text-right']").text
-    #     print("Total: ", amount)
-    #     print("two product added to the cart and total amount is displayed ")
-    #     print("Tc-7: Pass")
-    #     self.driver.find_element(By.LINK_TEXT, "Shop").click()
+
+    def test_tc6(self):
+        print("Tc-6: To verify the cart function for one items adding")
+        print("Running test case: 6")
+        self.driver.find_element(By.XPATH, "(//button[normalize-space()='Add'])[2]").click()
+        self.driver.find_element(By.XPATH, "//a[@class='nav-link btn btn-primary']").click()
+        amount = self.driver.find_element(By.XPATH, "//td[@class='text-right']").text
+        print("Total: ", amount)
+        print("one product added to the cart and total amount is displayed ")
+        print("Tc-6: Pass")
+        self.driver.find_element(By.LINK_TEXT, "Shop").click()
+
+    def test_tc7(self):
+        print("Tc-7: To verify the cart function for two items adding")
+        print("Running test case: 7")
+        self.driver.find_element(By.XPATH, "(//button[normalize-space()='Add'])[1]").click()
+        self.driver.find_element(By.XPATH, "(//button[normalize-space()='Add'])[2]").click()
+        self.driver.find_element(By.XPATH, "//a[@class='nav-link btn btn-primary']").click()
+        amount = self.driver.find_element(By.XPATH, "//td[@class='text-right']").text
+        print("Total: ", amount)
+        print("two product added to the cart and total amount is displayed ")
+        print("Tc-7: Pass")
+        self.driver.find_element(By.LINK_TEXT, "Shop").click()
     #
     # def test_tc8(self):
     #     print("Tc-8: To verify the cart function for three items adding")
