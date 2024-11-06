@@ -36,31 +36,31 @@ class Testpracticee(BaseeClass):
         print("Tc3: Pass")
         self.driver.find_element(By.LINK_TEXT, "Shop").click()
 
-    # def test_tc4(self):
-    #     print("Tc-4: To verify the check out function without adding any items")
-    #     print("Running test case: 4")
-    #     self.driver.find_element(By.XPATH, "//a[@class='nav-link btn btn-primary']").click()
-    #     amount = self.driver.find_element(By.XPATH, "//td[@class='text-right']").text
-    #     print("Total: ", amount)
-    #     print("Check out button is clickable and amount is Zero")
-    #     print("Tc-4: Pass")
+    def test_tc4(self):
+        print("Tc-4: To verify the check out function without adding any items")
+        print("Running test case: 4")
+        self.driver.find_element(By.XPATH, "//a[@class='nav-link btn btn-primary']").click()
+        amount = self.driver.find_element(By.XPATH, "//td[@class='text-right']").text
+        print("Total: ", amount)
+        print("Check out button is clickable and amount is Zero")
+        print("Tc-4: Pass")
     #     self.driver.find_element(By.LINK_TEXT, "Shop").click()
-    #
-    # def test_tc5(self):
-    #     print("#Tc-5: To verify the cart function with all items adding")
-    #     print("Running test case: 5")
-    #     lists = self.driver.find_elements(By.XPATH, "//body//app-root//app-card")
-    #     count = 0
-    #     for butn in lists:
-    #         button = butn.find_element(By.XPATH, ".//button[@class='btn btn-info']")
-    #         count += 1
-    #         button.click()
-    #     self.driver.find_element(By.XPATH, "//a[@class='nav-link btn btn-primary']").click()
-    #     amount = self.driver.find_element(By.XPATH, "//td[@class='text-right']").text
-    #     print("Total: ", amount)
-    #     print("All product added to the cart and total amount is displayed ")
-    #     print("Tc-5: Pass")
-    #     self.driver.find_element(By.LINK_TEXT, "Shop").click()
+
+    def test_tc5(self):
+        print("#Tc-5: To verify the cart function with all items adding")
+        print("Running test case: 5")
+        lists = self.driver.find_elements(By.XPATH, "//body//app-root//app-card")
+        count = 0
+        for butn in lists:
+            button = butn.find_element(By.XPATH, ".//button[@class='btn btn-info']")
+            count += 1
+            button.click()
+        self.driver.find_element(By.XPATH, "//a[@class='nav-link btn btn-primary']").click()
+        amount = self.driver.find_element(By.XPATH, "//td[@class='text-right']").text
+        print("Total: ", amount)
+        print("All product added to the cart and total amount is displayed ")
+        print("Tc-5: Pass")
+        self.driver.find_element(By.LINK_TEXT, "Shop").click()
     #
     # def test_tc6(self):
     #     print("Tc-6: To verify the cart function for one items adding")
