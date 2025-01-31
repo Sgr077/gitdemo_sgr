@@ -27,7 +27,7 @@ class Testpracticee(BaseeClass):
 
         print("Tc-2: Pass")
         
-       def test_tc3335(self):
+       def test_tc3334(self):
         print("Tc-2: To verify the shop cart link is clickable and launch in to correct site")
         print("Running test case: 2")
 
