@@ -26,6 +26,16 @@ class Testpracticee(BaseeClass):
         print("shop cart link is clickable and launch in to correct site")
 
         print("Tc-2: Pass")
+        
+       def test_tc3335(self):
+        print("Tc-2: To verify the shop cart link is clickable and launch in to correct site")
+        print("Running test case: 2")
+
+        # Click the shop link using XPath
+        self.driver.find_element(By.XPATH, "//a[normalize-space()='Shop']").click()
+        print("shop cart link is clickable and launch in to correct site")
+
+        print("Tc-2: Pass")
 
     
 
